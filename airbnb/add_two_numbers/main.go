@@ -1,25 +1,6 @@
 package main
 
-import (
-	"container/list"
-
-	"github.com/davecgh/go-spew/spew"
-)
-
-func main() {
-	// This is mostly just to test
-	l1, l2 := list.New(), list.New()
-	elems1 := []int{2, 4, 3}
-	elems2 := []int{5, 6, 4}
-	for i := range elems1 {
-		l1.PushBack(elems1[i])
-	}
-	for i := range elems2 {
-		l2.PushBack(elems2[i])
-	}
-	res := addTwoNumbers(l1, l2)
-	spew.Dump(res)
-}
+import "container/list"
 
 /*
 Algorithm/pseudocode:
